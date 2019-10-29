@@ -1,8 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const App: React.FC = () => {
+function App() {
+  useEffect(()=>{
+    Axios.get("api/user/me")
+    .then(resp=>{
+      console.log(resp.data)
+    })
+    .catch()
+  },[])
   return (
     <div className="App">
       <header className="App-header">
