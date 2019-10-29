@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Axios from "axios"
 function App() {
   useEffect(()=>{
     Axios.get("api/user/me")
