@@ -48,5 +48,6 @@
   },
   "devDependencies": {
     "ts-lint": "^4.5.1"
-  }
+  },
+  "proxy":"https://getami.herokuapp.com/"
 }
