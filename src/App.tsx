@@ -4,7 +4,7 @@ import './App.css';
 import Axios from "axios"
 function App() {
   useEffect(()=>{
-    Axios.get("https://getami.herokuapp.com/api/user/me")
+    Axios.get("https://getami.herokuapp.com/api/user/testing")
     .then(resp=>{
       console.log(resp.data)
     })
