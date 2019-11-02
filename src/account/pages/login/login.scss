@@ -7,4 +7,9 @@
     background-size: cover;
     margin-bottom: -94px;
   }
+  @media screen and (max-width: 600px) {
+    .login-side-description {
+      display: none;
+    }
+  }
 }

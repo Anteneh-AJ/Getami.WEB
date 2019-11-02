@@ -7,12 +7,12 @@ import "./login.scss";
 export function Login() {
     return (
         <Container className={"login-container"}>
-            <Paper elevation={10}>
+            <Paper>
                 <Box width={"50%"} display={"inline-block"} className={"login-side-description"}>
                 </Box>
                 <Box marginBottom={"5%"} width={"50%"} display={"inline-block"}>
                     <form>
-                        <Box>
+                        <Box margin={"10% 0% 10% 0%"}>
                             <Box fontSize={36} fontWeight={"light"} textAlign={"center"}>
                                 Welcome to Getem
                             </Box>
