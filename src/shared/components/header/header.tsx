@@ -1,12 +1,13 @@
 import React from "react"
 import { Button, Typography, Toolbar, AppBar, Box } from "@material-ui/core"
 import "./header.scss";
-import { Link } from "react-router-dom";
+import { history } from "../../../account/configuration/account-routes";
 
 interface INavLinks {
 
     icon: React.ReactNode,
     linkText: string
+    route: string
 
 }
 interface IHeaderProps {
@@ -22,11 +23,9 @@ export function Header(props: IHeaderProps) {
                 </Typography>
                 {props.navlinks.map((nav) =>
                     <Box>
-                        <Button color="inherit">
-                            {nav.icon} &nbsp;
-                            <Link to={"/register"}>
-                                {nav.linkText}
-                            </Link>
+                        <Button color="inherit" onClick={() => history.push(nav.route)}>
+                            {nav.icon} &emsp;
+                            {nav.linkText}
                         </Button>
                     </Box>
                 )}

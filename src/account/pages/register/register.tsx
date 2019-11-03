@@ -3,6 +3,7 @@ import { Container, Box, TextField, Paper, Button, IconButton } from "@material-
 import "./register.scss";
 import { Facebook, Twitter } from '@material-ui/icons';
 import Google from "../../../assets/images/google-logo.png";
+import { history } from "../../configuration/account-routes";
 export function Register() {
     return (
         <Container className={"register-container"}>
@@ -59,7 +60,7 @@ export function Register() {
                             </IconButton>
                         </Box>
                         <Box margin={"3%"} borderBottom={"black"} textAlign={"center"}>
-                            <Button>
+                            <Button onClick={() => history.push("/")}>
                                 Already have an account?
                             </Button>
                         </Box>

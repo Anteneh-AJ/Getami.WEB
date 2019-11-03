@@ -3,6 +3,7 @@ import { Container, Box, TextField, Paper, Button, IconButton, Link } from "@mat
 import { Facebook, Twitter } from '@material-ui/icons';
 import Google from "../../../assets/images/google-logo.png";
 import "./login.scss";
+import { history } from "../../configuration/account-routes";
 
 export function Login() {
     return (
@@ -62,7 +63,7 @@ export function Login() {
                             </IconButton>
                         </Box>
                         <Box margin={"3%"} borderBottom={"black"} textAlign={"center"}>
-                            <Button>
+                            <Button onClick={() => history.push('/register')}>
                                 Create a new account?
                             </Button>
                         </Box>
