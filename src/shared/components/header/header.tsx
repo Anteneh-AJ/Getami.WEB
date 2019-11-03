@@ -1,6 +1,7 @@
 import React from "react"
 import { Button, Typography, Toolbar, AppBar, Box } from "@material-ui/core"
 import "./header.scss";
+import { Link } from "react-router-dom";
 
 interface INavLinks {
 
@@ -23,7 +24,9 @@ export function Header(props: IHeaderProps) {
                     <Box>
                         <Button color="inherit">
                             {nav.icon} &nbsp;
-                            {nav.linkText}
+                            <Link to={"/register"}>
+                                {nav.linkText}
+                            </Link>
                         </Button>
                     </Box>
                 )}

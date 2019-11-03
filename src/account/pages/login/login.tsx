@@ -12,7 +12,7 @@ export function Login() {
                 </Box>
                 <Box marginBottom={"5%"} width={"50%"} display={"inline-block"}>
                     <form>
-                        <Box margin={"10% 0% 20% 0%"}>
+                        <Box margin={"10% 0% 10% 0%"}>
                             <Box fontSize={36} fontWeight={"light"} textAlign={"center"}>
                                 Welcome to Getem
                             </Box>
@@ -44,7 +44,7 @@ export function Login() {
                                 Forgot password?
                             </Link>
                         </Box>
-                        <Box margin={"5% 15% 5% 15%"}>
+                        <Box margin={"5% 15% 10% 15%"}>
                             <Button fullWidth color={"primary"} variant={'contained'}>
                                 Login
                             </Button>
