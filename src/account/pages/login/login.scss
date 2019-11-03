@@ -5,7 +5,11 @@
     background-image: url("../../../assets/images/sample.jpg");
     background-position: center;
     background-size: cover;
-    margin-bottom: -94px;
+    margin-bottom: -66px;
+  }
+  .login-paper {
+    width: 800px;
+    margin: auto;
   }
   @media screen and (max-width: 600px) {
     .login-side-description {

@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { store } from './store/store';
 import { ThemeProvider } from '@material-ui/styles';
 import { theme } from "./assets/styles/theme";
-
+import "./assets/styles/style.scss";
 ReactDOM.render(
     <Provider store={store}>
         <ThemeProvider theme={theme}>
