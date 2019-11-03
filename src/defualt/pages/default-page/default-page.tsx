@@ -6,7 +6,6 @@ import { Box } from '@material-ui/core';
 export function DefaultPage() {
     return (
         <Box bgcolor={"primary"}>
-            <Header />
             <Register />
         </Box>
     );
